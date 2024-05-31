@@ -18,21 +18,22 @@ A arquitetura do projeto utiliza uma abordagem de microserviços, onde cada comp
 ## Estrutura do Projeto
 
 ```
-platform.race.auth/
+auth/
 ├── src/
 │   ├── main/
 │   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── example/
-│   │   │           └── auth/
-│   │   │               ├── controller/
-│   │   │               ├── model/
-│   │   │               ├── repository/
-│   │   │               └── service/
-│   │   └── resources/
-│   └── test/
+│   │       └── insper/
+│   │           └── store/
+│   │               └── auth/
+│   │                   ├── AuthController/
+│   │                   ├── CredentialIn/
+│   │                   ├── LoginOut/
+│   │                   ├── RegisterIn/
+│   │                   ├── SolveIn/
+│   │                   └── SolveOut/
+│   └── resources/
+├── .gitignore
 ├── Jenkinsfile
-├── docker-compose.yml
 ├── README.md
 └── pom.xml
 ```
